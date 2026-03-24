@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  /* font-family: 'poppins'; */
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(26,26,26);
+  padding: 1rem; /* prevents edge sticking on small screens */
+}
+
+.container {
+  background-color: rgb(31, 31, 30);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 2px solid rgb(254, 210, 21);
+  width: 100%;
+  max-width: 420px; /* responsive max width */
+}
+
+form {
+  padding: 2rem 0;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+}
+
+form input {
+  border: 1px solid grey;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+form button {
+box-sizing: border-box;
+  border: 1px solid grey;
+  font-size: 1rem;
+  height: 3rem;
+  /* margin-top: 1rem; */
+  border-radius: 2rem;
+  /* background-color: rgb(198, 52, 235); */
+  /* background-color: rgb(246, 51, 86); */
+  background-color: rgb(254, 210, 21);
+  color: rgb(31,31,30);
+  /* color: white; */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-family: 'poppins';
+  font-size: 1.2rem;
+}
+
+form button:hover {
+  opacity: 0.85;
+}
+
+.dropDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.selector img {
+  max-width: 2rem;
+
+}
+
+.selector {
+  display: flex;
+  width: 100%;
+  max-width: 120px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  font-size: 1rem;
+  padding: 0.3rem;
+  /* border: 2px solid rgb(254, 210, 21); */
+  /* background-color: rgb(217, 22, 22); */
+}
+
+.dropDown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.msg {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .dropDown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .selector {
+    max-width: 100%;
+    
+  }
+
+  .dropDown i {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
+h1{
+    /* width: auto; */
+    font-family: 'poppins';
+    color: rgb(254, 210, 21);
+    /* border-bottom: 4px solid rgb(254, 210, 21); */
+    
+}
+
+select{
+    background-color: rgb(31, 31, 30);
+    
+    
+}
+
+input{
+  color: black;  
+}
+
