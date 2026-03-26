@@ -51,3 +51,19 @@ btn.addEventListener("click", async (evt) => {
 
   msg.innerText = `${amountVal} ${fromCurr.value} = ${finalVal} ${toCurr.value}`;
 });
+window.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const from = fromCurr.value; // e.g., USD
+    const to = toCurr.value; // e.g., INR
+    const URL = `${BASE_URL}${from.toLowerCase()}.json`;
+
+    const response = await fetch(URL);
+    const data = await response.json();
+    const rate = data[from.toLowerCase()][to.toLowerCase()];
+
+    msg.innerText = `1 ${from} = ${rate.toFixed(3)} ${to}`;
+  } catch (error) {
+    msg.innerText = "Error fetching exchange rate!";
+    console.error(error);
+  }
+});
